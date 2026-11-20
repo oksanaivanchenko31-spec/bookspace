@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Профіль читача — BookSpace</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&subset=cyrillic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/readers.js" defer></script>
+</head>
+<body data-page="reader" data-auth="required">
+  <a class="skip" href="#main">Перейти до вмісту</a>
+  <header class="header">
+    <div class="container header__in">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="" width="44" height="44"><span>BookSpace</span></a>
+      <nav class="nav" aria-label="Головна навігація"><a href="catalog.html" aria-current="page">Каталог</a><a href="shelf.html">Моя полиця</a><a href="profile.html">Профіль</a><a href="notifications.html">Сповіщення</a></nav>
+      <form class="search" role="search" action="catalog.html" autocomplete="off">
+        <label class="sr" for="q">Пошук книги</label>
+        <input id="q" name="q" type="search" placeholder="Знайти книгу або автора" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggest">
+        <ul class="suggest" id="suggest" role="listbox" aria-label="Підказки" hidden></ul>
+      </form>
+      <a id="auth" class="btn btn--sm" href="login.html">Увійти</a>
+    </div>
+  </header>
+  <main id="main" class="container">
+
+    <section class="profile">
+      <div class="avatar avatar--xl" id="r-ini" aria-hidden="true"></div>
+      <div class="profile__info">
+        <p class="eyebrow">Профіль читача</p>
+        <h1 id="r-name"></h1>
+        <p class="lead" id="r-bio"></p>
+        <dl class="facts"><div><dt>прочитано</dt><dd id="r-n3">0</dd></div><div><dt>читає зараз</dt><dd id="r-n2">0</dd></div><div><dt>хоче прочитати</dt><dd id="r-n1">0</dd></div></dl>
+      </div>
+      <div class="profile__btns"><button class="btn" type="button" id="r-follow" aria-pressed="false">Підписатися</button></div>
+    </section>
+    <p class="msg" id="r-msg" role="status"></p>
+    <section aria-labelledby="h-r3"><h2 id="h-r3">Прочитано</h2><div id="r-l3"></div></section>
+    <section aria-labelledby="h-r2"><h2 id="h-r2">Читає зараз</h2><div id="r-l2"></div></section>
+    <section aria-labelledby="h-r1"><h2 id="h-r1">Хоче прочитати</h2><div id="r-l1"></div></section>
+    <p><a class="link" href="readers.html">‹ До списку читачів</a></p>
+  </main>
+  <footer class="footer"><div class="container">© 2026 BookSpace · Соціальна платформа для книголюбів</div></footer>
+  <nav class="tabbar" aria-label="Мобільна навігація"><a href="index.html"><span aria-hidden="true">⌂</span>Головна</a><a href="catalog.html" aria-current="page"><span aria-hidden="true">⌕</span>Каталог</a><a href="shelf.html"><span aria-hidden="true">▤</span>Полиця</a><a href="notifications.html"><span aria-hidden="true">♤</span>Сповіщення</a><a href="profile.html"><span aria-hidden="true">☺</span>Профіль</a></nav>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <dialog id="dialog" class="dialog" aria-labelledby="dialog-title"></dialog>
+</body>
+</html>

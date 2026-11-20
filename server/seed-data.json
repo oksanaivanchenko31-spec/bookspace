@@ -1,0 +1,195 @@
+{
+ "books": [
+  {
+   "slug": "sto-rokiv",
+   "title": "Сто років самотності",
+   "author": "Ґабріель Ґарсія Маркес",
+   "genre": "Класика",
+   "isbn": "9780060883287",
+   "color": "#8f2a22",
+   "cover_url": "https://static.yakaboo.ua/media/catalog/product/1/9/192_1_3.jpg",
+   "description": "Сага роду Буендіа в місті Макондо: кохання, війни й самотність, у якій минуле повторюється знову і знову.",
+   "base_rating": 4.6,
+   "base_votes": 128
+  },
+  {
+   "slug": "misto-divchat",
+   "title": "Місто дівчат",
+   "author": "Елізабет Ґілберт",
+   "genre": "Роман",
+   "isbn": "9781594634734",
+   "color": "#5f7d8c",
+   "cover_url": "https://s3.vcdn.biz/static/f/11655270891/31ec7aa98e734fef9f3e59c62a63aee0.jpeg",
+   "description": "Нью-Йорк 1940-х очима молодої Віві, яка тікає від родини до театру й відкриває для себе свободу.",
+   "base_rating": 4.0,
+   "base_votes": 128
+  },
+  {
+   "slug": "dyuna",
+   "title": "Дюна",
+   "author": "Френк Герберт",
+   "genre": "Фантастика",
+   "isbn": "9780441172719",
+   "color": "#c28a2e",
+   "cover_url": "https://vivat.com.ua/storage/1.d/files/c/2/c2b4c1eb_.png",
+   "description": "Епічна історія про пустельну планету Арракіс, боротьбу за «спайс» і долю юного Пола Атрейдеса.",
+   "base_rating": 4.5,
+   "base_votes": 128
+  },
+  {
+   "slug": "tyhrolovy",
+   "title": "Тигролови",
+   "author": "Іван Багряний",
+   "genre": "Класика",
+   "isbn": "",
+   "color": "#7a5a1e",
+   "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gHsUgfIWQYq--TxmExIAuddPGYfvhKublBpup1panXjXZbGB7nCuYOQ&s=10",
+   "description": "Пригодницький роман про Григорія Многогрішного, який тікає з радянського табору й пробивається через тайгу.",
+   "base_rating": 4.7,
+   "base_votes": 128
+  },
+  {
+   "slug": "1984",
+   "title": "1984",
+   "author": "Джордж Орвелл",
+   "genre": "Фантастика",
+   "isbn": "9780451524935",
+   "color": "#9c2f2f",
+   "cover_url": "https://static.yakaboo.ua/media/catalog/product/2/6/26_1_329.jpg",
+   "description": "Антиутопія про тоталітарну державу, де за кожним стежить Великий Брат, а минуле переписують.",
+   "base_rating": 4.6,
+   "base_votes": 128
+  },
+  {
+   "slug": "harry-potter",
+   "title": "Гаррі Поттер і філософський камінь",
+   "author": "Дж. К. Роулінг",
+   "genre": "Фентезі",
+   "isbn": "9780747532699",
+   "color": "#3b3f6b",
+   "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRf9NndJky4_r6Exn02KNaK8vo5B1l1rmtctK5hu8UywVTukk_e53DJPIk&s=10",
+   "description": "Хлопчик дізнається, що він чарівник, і вирушає навчатися до Гоґвортсу.",
+   "base_rating": 4.8,
+   "base_votes": 128
+  },
+  {
+   "slug": "orient-express",
+   "title": "Вбивство у «Східному експресі»",
+   "author": "Агата Крісті",
+   "genre": "Детектив",
+   "isbn": "9780062693662",
+   "color": "#2f4a57",
+   "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpXAoAUXwLBgjW6MydKny4h9rF7J8LuVFrdzeU-3rUHip0H42UC-dC384W&s=10",
+   "description": "Детектив Ерюль Пуаро розслідує вбивство в потязі, застряглому в снігах.",
+   "base_rating": 4.3,
+   "base_votes": 128
+  },
+  {
+   "slug": "sapiens",
+   "title": "Sapiens. Коротка історія людства",
+   "author": "Юваль Ной Харарі",
+   "genre": "Науково-популярна",
+   "isbn": "9780062316097",
+   "color": "#d0b25a",
+   "cover_url": "https://bookchef.ua/storage/products/5395/photo/main.jpg",
+   "description": "Науково-популярний огляд історії людства від мисливців-збирачів до сучасних технологій.",
+   "base_rating": 4.4,
+   "base_votes": 128
+  },
+  {
+   "slug": "girl-train",
+   "title": "Дівчина у потягу",
+   "author": "Пола Гоукінс",
+   "genre": "Трилер",
+   "isbn": "9781594634024",
+   "color": "#34383f",
+   "cover_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeOAmtjTos0TclqFBOoB_0_HxVqhZ6KteS3Yod9YBNPbOR_vSln8Rdc9Mh&s=10",
+   "description": "Щоденна поїздка потягом перетворюється на трилер, коли героїня стає свідком зникнення.",
+   "base_rating": 3.9,
+   "base_votes": 128
+  }
+ ],
+ "demoReaders": [
+  {
+   "key": "olena",
+   "name": "Олена Коваль",
+   "gender": "f",
+   "bio": "Люблю фантастику й довгі вечори з книжкою.",
+   "email": "olena@demo.bookspace.local",
+   "read": [
+    "dyuna",
+    "1984"
+   ],
+   "reading": [
+    "sapiens"
+   ],
+   "want": [
+    "harry-potter"
+   ]
+  },
+  {
+   "key": "andrii",
+   "name": "Андрій Савчук",
+   "gender": "m",
+   "bio": "Детективи, трилери та кава.",
+   "email": "andrii@demo.bookspace.local",
+   "read": [
+    "orient-express",
+    "girl-train"
+   ],
+   "reading": [
+    "1984"
+   ],
+   "want": [
+    "dyuna"
+   ]
+  },
+  {
+   "key": "sofiia",
+   "name": "Софія Бондар",
+   "gender": "f",
+   "bio": "Українська класика понад усе.",
+   "email": "sofiia@demo.bookspace.local",
+   "read": [
+    "tyhrolovy",
+    "sto-rokiv"
+   ],
+   "reading": [],
+   "want": [
+    "misto-divchat"
+   ]
+  },
+  {
+   "key": "maksym",
+   "name": "Максим Гнатюк",
+   "gender": "m",
+   "bio": "Науково-популярне й історія.",
+   "email": "maksym@demo.bookspace.local",
+   "read": [
+    "sapiens"
+   ],
+   "reading": [
+    "dyuna"
+   ],
+   "want": [
+    "1984"
+   ]
+  },
+  {
+   "key": "iryna",
+   "name": "Ірина Мельник",
+   "gender": "f",
+   "bio": "Читаю роман за романом.",
+   "email": "iryna@demo.bookspace.local",
+   "read": [
+    "misto-divchat"
+   ],
+   "reading": [
+    "sto-rokiv"
+   ],
+   "want": [
+    "orient-express"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тигролови — BookSpace</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&subset=cyrillic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/forms.js" defer></script>
+  <script src="js/book.js" defer></script>
+</head>
+<body data-page="book" data-slug="tyhrolovy">
+  <a class="skip" href="#main">Перейти до вмісту</a>
+  <header class="header">
+    <div class="container header__in">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="" width="44" height="44"><span>BookSpace</span></a>
+      <nav class="nav" aria-label="Головна навігація"><a href="catalog.html">Каталог</a><a href="shelf.html">Моя полиця</a><a href="profile.html">Профіль</a><a href="notifications.html">Сповіщення</a></nav>
+      <form class="search" role="search" action="catalog.html" autocomplete="off">
+        <label class="sr" for="q">Пошук книги</label>
+        <input id="q" name="q" type="search" placeholder="Знайти книгу або автора" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggest">
+        <ul class="suggest" id="suggest" role="listbox" aria-label="Підказки" hidden></ul>
+      </form>
+      <a id="auth" class="btn btn--sm" href="login.html">Увійти</a>
+    </div>
+  </header>
+  <main id="main" class="container">
+
+    <article class="book">
+      <img class="book__cover" src="images/covers/tyhrolovy.jpg" data-slug="tyhrolovy" alt="Обкладинка книги «Тигролови»" style="--cover:#7a5a1e">
+      <div class="book__info">
+        <p class="eyebrow">Класика</p><h1>Тигролови</h1><p class="lead">Іван Багряний</p>
+        <p class="rating"><span class="stars" aria-hidden="true">★</span> <strong id="avg">4,7</strong> · <span id="cnt">128 оцінок</span></p>
+        <p>Пригодницький роман про Григорія Многогрішного, який тікає з радянського табору й пробивається через тайгу.</p>
+        <form class="status" id="shelf-form">
+          <label for="st">Статус книги</label>
+          <select id="st"><option>Хочу прочитати</option><option>Читаю зараз</option><option>Прочитано</option></select>
+          <button class="btn" type="submit" id="add">Додати до полиці</button>
+          <button class="btn btn--ghost" type="button" id="remove" hidden>Видалити з полиці</button>
+        </form>
+        <p class="msg" id="shelf-msg" role="status"></p>
+        <div class="rate"><span id="rate-label">Ваша оцінка</span>
+          <div id="stars-in" role="group" aria-labelledby="rate-label"><button type="button" data-v="1" aria-label="Оцінка 1 з 5">★</button><button type="button" data-v="2" aria-label="Оцінка 2 з 5">★</button><button type="button" data-v="3" aria-label="Оцінка 3 з 5">★</button><button type="button" data-v="4" aria-label="Оцінка 4 з 5">★</button><button type="button" data-v="5" aria-label="Оцінка 5 з 5">★</button></div>
+          <p class="hint" id="rate-hint"></p></div>
+      </div>
+    </article>
+    <section class="reviews" aria-labelledby="h-rv">
+      <h2 id="h-rv">Відгуки</h2>
+      <form class="review-form" id="rf" novalidate>
+        <div class="field"><label for="rv">Ваш відгук <span class="counter" id="rv-count">0/1000</span></label>
+        <textarea id="rv" rows="4" maxlength="1000" placeholder="Поділіться враженнями від книги" aria-describedby="rv-err"></textarea>
+        <p class="field__error" id="rv-err" role="alert" hidden></p></div>
+        <button class="btn" type="submit" id="rv-btn">Опублікувати відгук</button>
+      </form>
+      <div id="reviews-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container">© 2026 BookSpace · Соціальна платформа для книголюбів</div></footer>
+  <nav class="tabbar" aria-label="Мобільна навігація"><a href="index.html"><span aria-hidden="true">⌂</span>Головна</a><a href="catalog.html"><span aria-hidden="true">⌕</span>Каталог</a><a href="shelf.html"><span aria-hidden="true">▤</span>Полиця</a><a href="notifications.html"><span aria-hidden="true">♤</span>Сповіщення</a><a href="profile.html"><span aria-hidden="true">☺</span>Профіль</a></nav>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <dialog id="dialog" class="dialog" aria-labelledby="dialog-title"></dialog>
+</body>
+</html>

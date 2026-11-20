@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог — BookSpace</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&subset=cyrillic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/ui.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+</head>
+<body data-page="catalog">
+  <a class="skip" href="#main">Перейти до вмісту</a>
+  <header class="header">
+    <div class="container header__in">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="" width="44" height="44"><span>BookSpace</span></a>
+      <nav class="nav" aria-label="Головна навігація"><a href="catalog.html" aria-current="page">Каталог</a><a href="shelf.html">Моя полиця</a><a href="profile.html">Профіль</a><a href="notifications.html">Сповіщення</a></nav>
+      <form class="search" role="search" action="catalog.html" autocomplete="off">
+        <label class="sr" for="q">Пошук книги</label>
+        <input id="q" name="q" type="search" placeholder="Знайти книгу або автора" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="suggest">
+        <ul class="suggest" id="suggest" role="listbox" aria-label="Підказки" hidden></ul>
+      </form>
+      <a id="auth" class="btn btn--sm" href="login.html">Увійти</a>
+    </div>
+  </header>
+  <main id="main" class="container">
+
+    <header class="page-head">
+      <div><p class="eyebrow">Каталог</p><h1>Знайдіть наступну історію</h1>
+      <p class="lead">Шукайте за назвою чи автором і фільтруйте за жанром.</p></div>
+      <p class="count" id="count" aria-live="polite">9 результатів</p>
+    </header>
+    <div class="tabs tabs--pages"><a class="tab is-on" href="catalog.html">Книги</a><a class="tab" href="readers.html">Читачі</a></div>
+    <form class="searchbig" role="search" action="catalog.html">
+      <label class="sr" for="cq">Назва книги або автор</label>
+      <input id="cq" type="search" placeholder="Назва книги або автор">
+    </form>
+    <div class="chips"><span>Жанр:</span><ul><li><button class="chip" type="button" data-genre="Фантастика" aria-pressed="false">Фантастика</button></li><li><button class="chip" type="button" data-genre="Фентезі" aria-pressed="false">Фентезі</button></li><li><button class="chip" type="button" data-genre="Детектив" aria-pressed="false">Детектив</button></li><li><button class="chip" type="button" data-genre="Роман" aria-pressed="false">Роман</button></li><li><button class="chip" type="button" data-genre="Класика" aria-pressed="false">Класика</button></li><li><button class="chip" type="button" data-genre="Трилер" aria-pressed="false">Трилер</button></li><li><button class="chip" type="button" data-genre="Науково-популярна" aria-pressed="false">Науково-популярна</button></li></ul><button class="link" type="button" id="reset" hidden>Скинути фільтри</button></div>
+    <div class="sort"><label for="sort">Сортувати:</label>
+      <select id="sort"><option value="default">За замовчуванням</option><option value="title">За назвою (А–Я)</option><option value="author">За автором (А–Я)</option><option value="rating">За рейтингом</option></select></div>
+    <p class="empty" id="empty" hidden>Нічого не знайдено. Спробуйте іншу назву або жанр.</p>
+    <ul class="grid">
+<li data-slug="sto-rokiv"><a class="card" href="book-sto-rokiv.html" style="--cover:#8f2a22">
+  <img class="card__img" src="images/covers/sto-rokiv.jpg" data-slug="sto-rokiv" alt="Обкладинка книги «Сто років самотності»" loading="lazy">
+  <span class="card__tag">Класика</span>
+  <span class="card__text"><strong>Сто років самотності</strong><span>Ґабріель Ґарсія Маркес</span></span>
+</a></li>
+<li data-slug="misto-divchat"><a class="card" href="book-misto-divchat.html" style="--cover:#5f7d8c">
+  <img class="card__img" src="images/covers/misto-divchat.jpg" data-slug="misto-divchat" alt="Обкладинка книги «Місто дівчат»" loading="lazy">
+  <span class="card__tag">Роман</span>
+  <span class="card__text"><strong>Місто дівчат</strong><span>Елізабет Ґілберт</span></span>
+</a></li>
+<li data-slug="dyuna"><a class="card" href="book-dyuna.html" style="--cover:#c28a2e">
+  <img class="card__img" src="images/covers/dyuna.jpg" data-slug="dyuna" alt="Обкладинка книги «Дюна»" loading="lazy">
+  <span class="card__tag">Фантастика</span>
+  <span class="card__text"><strong>Дюна</strong><span>Френк Герберт</span></span>
+</a></li>
+<li data-slug="tyhrolovy"><a class="card" href="book-tyhrolovy.html" style="--cover:#7a5a1e">
+  <img class="card__img" src="images/covers/tyhrolovy.jpg" data-slug="tyhrolovy" alt="Обкладинка книги «Тигролови»" loading="lazy">
+  <span class="card__tag">Класика</span>
+  <span class="card__text"><strong>Тигролови</strong><span>Іван Багряний</span></span>
+</a></li>
+<li data-slug="1984"><a class="card" href="book-1984.html" style="--cover:#9c2f2f">
+  <img class="card__img" src="images/covers/1984.jpg" data-slug="1984" alt="Обкладинка книги «1984»" loading="lazy">
+  <span class="card__tag">Фантастика</span>
+  <span class="card__text"><strong>1984</strong><span>Джордж Орвелл</span></span>
+</a></li>
+<li data-slug="harry-potter"><a class="card" href="book-harry-potter.html" style="--cover:#3b3f6b">
+  <img class="card__img" src="images/covers/harry-potter.jpg" data-slug="harry-potter" alt="Обкладинка книги «Гаррі Поттер і філософський камінь»" loading="lazy">
+  <span class="card__tag">Фентезі</span>
+  <span class="card__text"><strong>Гаррі Поттер і філософський камінь</strong><span>Дж. К. Роулінг</span></span>
+</a></li>
+<li data-slug="orient-express"><a class="card" href="book-orient-express.html" style="--cover:#2f4a57">
+  <img class="card__img" src="images/covers/orient-express.jpg" data-slug="orient-express" alt="Обкладинка книги «Вбивство у «Східному експресі»»" loading="lazy">
+  <span class="card__tag">Детектив</span>
+  <span class="card__text"><strong>Вбивство у «Східному експресі»</strong><span>Агата Крісті</span></span>
+</a></li>
+<li data-slug="sapiens"><a class="card" href="book-sapiens.html" style="--cover:#d0b25a">
+  <img class="card__img" src="images/covers/sapiens.jpg" data-slug="sapiens" alt="Обкладинка книги «Sapiens. Коротка історія людства»" loading="lazy">
+  <span class="card__tag">Науково-популярна</span>
+  <span class="card__text"><strong>Sapiens. Коротка історія людства</strong><span>Юваль Ной Харарі</span></span>
+</a></li>
+<li data-slug="girl-train"><a class="card" href="book-girl-train.html" style="--cover:#34383f">
+  <img class="card__img" src="images/covers/girl-train.jpg" data-slug="girl-train" alt="Обкладинка книги «Дівчина у потягу»" loading="lazy">
+  <span class="card__tag">Трилер</span>
+  <span class="card__text"><strong>Дівчина у потягу</strong><span>Пола Гоукінс</span></span>
+</a></li>
+</ul>
+  </main>
+  <footer class="footer"><div class="container">© 2026 BookSpace · Соціальна платформа для книголюбів</div></footer>
+  <nav class="tabbar" aria-label="Мобільна навігація"><a href="index.html"><span aria-hidden="true">⌂</span>Головна</a><a href="catalog.html" aria-current="page"><span aria-hidden="true">⌕</span>Каталог</a><a href="shelf.html"><span aria-hidden="true">▤</span>Полиця</a><a href="notifications.html"><span aria-hidden="true">♤</span>Сповіщення</a><a href="profile.html"><span aria-hidden="true">☺</span>Профіль</a></nav>
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  <dialog id="dialog" class="dialog" aria-labelledby="dialog-title"></dialog>
+</body>
+</html>

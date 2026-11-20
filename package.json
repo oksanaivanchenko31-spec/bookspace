@@ -1,0 +1,23 @@
+{
+  "name": "bookspace",
+  "version": "1.0.0",
+  "description": "BookSpace - соціальна платформа для книголюбів (клієнт + сервер Express + SQLite)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test",
+    "bench": "node server/bench.js"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "compression": "^1.7.5"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "^12.0.0"
+  },
+  "license": "MIT"
+}
